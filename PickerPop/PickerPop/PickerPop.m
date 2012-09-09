@@ -32,9 +32,11 @@
             [self.popover dismissPopoverAnimated:YES];
             self.action(selected);
         } ];
+        
         self.popover = [[UIPopoverController alloc]
                                 initWithContentViewController:table];
-        [self.popover presentPopoverFromRect:[view frame] inView:view
+        
+        [self.popover presentPopoverFromRect:[view frame] inView:[[UIApplication sharedApplication] keyWindow]
                      permittedArrowDirections:UIPopoverArrowDirectionAny animated:YES];
     } else {
         self.menu = [[UIActionSheet alloc] initWithTitle:nil

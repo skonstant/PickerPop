@@ -22,6 +22,22 @@
     if (self) {
         self.data = data;
         self.action = predicate;
+        
+        int width = 100;
+        
+        for (NSString *string in data) {
+            CGSize maximumSize = CGSizeMake(620, 999999999);
+            CGSize expectedSize = [string sizeWithFont:[UIFont boldSystemFontOfSize:18.0] constrainedToSize:maximumSize lineBreakMode:UILineBreakModeWordWrap];
+            if(width < expectedSize.width){
+                width = expectedSize.width;
+            }
+        }
+        
+        self.tableView.frame = CGRectMake(self.tableView.frame.origin.x,
+                                           self.tableView.frame.origin.y,
+                                          width + 80,
+                                          self.tableView.rowHeight * [self.data count]);
+        self.contentSizeForViewInPopover = self.tableView.frame.size;
     }
     return self;
 }
