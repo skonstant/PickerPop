@@ -1,0 +1,242 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F486EC8B15FD1C4500C1E6A6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F486EC8A15FD1C4500C1E6A6 /* Foundation.framework */; };
+		F486EC9015FD1C4500C1E6A6 /* PickerPop.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F486EC8F15FD1C4500C1E6A6 /* PickerPop.h */; };
+		F486EC9215FD1C4500C1E6A6 /* PickerPop.m in Sources */ = {isa = PBXBuildFile; fileRef = F486EC9115FD1C4500C1E6A6 /* PickerPop.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F486EC8515FD1C4500C1E6A6 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+				F486EC9015FD1C4500C1E6A6 /* PickerPop.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		F486EC8715FD1C4500C1E6A6 /* libPickerPop.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPickerPop.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F486EC8A15FD1C4500C1E6A6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F486EC8E15FD1C4500C1E6A6 /* PickerPop-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PickerPop-Prefix.pch"; sourceTree = "<group>"; };
+		F486EC8F15FD1C4500C1E6A6 /* PickerPop.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PickerPop.h; sourceTree = "<group>"; };
+		F486EC9115FD1C4500C1E6A6 /* PickerPop.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PickerPop.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F486EC8415FD1C4500C1E6A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F486EC8B15FD1C4500C1E6A6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F486EC7C15FD1C4500C1E6A6 = {
+			isa = PBXGroup;
+			children = (
+				F486EC8C15FD1C4500C1E6A6 /* PickerPop */,
+				F486EC8915FD1C4500C1E6A6 /* Frameworks */,
+				F486EC8815FD1C4500C1E6A6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F486EC8815FD1C4500C1E6A6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F486EC8715FD1C4500C1E6A6 /* libPickerPop.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F486EC8915FD1C4500C1E6A6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F486EC8A15FD1C4500C1E6A6 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F486EC8C15FD1C4500C1E6A6 /* PickerPop */ = {
+			isa = PBXGroup;
+			children = (
+				F486EC8F15FD1C4500C1E6A6 /* PickerPop.h */,
+				F486EC9115FD1C4500C1E6A6 /* PickerPop.m */,
+				F486EC8D15FD1C4500C1E6A6 /* Supporting Files */,
+			);
+			path = PickerPop;
+			sourceTree = "<group>";
+		};
+		F486EC8D15FD1C4500C1E6A6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F486EC8E15FD1C4500C1E6A6 /* PickerPop-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F486EC8615FD1C4500C1E6A6 /* PickerPop */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F486EC9515FD1C4500C1E6A6 /* Build configuration list for PBXNativeTarget "PickerPop" */;
+			buildPhases = (
+				F486EC8315FD1C4500C1E6A6 /* Sources */,
+				F486EC8415FD1C4500C1E6A6 /* Frameworks */,
+				F486EC8515FD1C4500C1E6A6 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PickerPop;
+			productName = PickerPop;
+			productReference = F486EC8715FD1C4500C1E6A6 /* libPickerPop.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F486EC7E15FD1C4500C1E6A6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = "Stephane Konstantaropoulos";
+			};
+			buildConfigurationList = F486EC8115FD1C4500C1E6A6 /* Build configuration list for PBXProject "PickerPop" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F486EC7C15FD1C4500C1E6A6;
+			productRefGroup = F486EC8815FD1C4500C1E6A6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F486EC8615FD1C4500C1E6A6 /* PickerPop */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F486EC8315FD1C4500C1E6A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F486EC9215FD1C4500C1E6A6 /* PickerPop.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		F486EC9315FD1C4500C1E6A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F486EC9415FD1C4500C1E6A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F486EC9615FD1C4500C1E6A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/PickerPop.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PickerPop/PickerPop-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		F486EC9715FD1C4500C1E6A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/PickerPop.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PickerPop/PickerPop-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F486EC8115FD1C4500C1E6A6 /* Build configuration list for PBXProject "PickerPop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F486EC9315FD1C4500C1E6A6 /* Debug */,
+				F486EC9415FD1C4500C1E6A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F486EC9515FD1C4500C1E6A6 /* Build configuration list for PBXNativeTarget "PickerPop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F486EC9615FD1C4500C1E6A6 /* Debug */,
+				F486EC9715FD1C4500C1E6A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F486EC7E15FD1C4500C1E6A6 /* Project object */;
+}
