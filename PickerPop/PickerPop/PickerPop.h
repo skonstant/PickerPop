@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
-@interface PickerPop : NSObject
+typedef void (^TapBlock)(NSObject *);
 
+@interface PickerPop : NSObject
+- (id)initWithData:(NSArray *)data initiator:(UIView *)view action:(void ( ^ )(NSObject *))predicate;
 @end
