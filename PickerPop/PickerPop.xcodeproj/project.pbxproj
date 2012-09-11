@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F452142615FF56C900E075D9 /* PopOverDateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F452142415FF56C900E075D9 /* PopOverDateViewController.m */; };
 		F486EC8B15FD1C4500C1E6A6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F486EC8A15FD1C4500C1E6A6 /* Foundation.framework */; };
 		F486EC9015FD1C4500C1E6A6 /* PickerPop.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F486EC8F15FD1C4500C1E6A6 /* PickerPop.h */; };
 		F486EC9215FD1C4500C1E6A6 /* PickerPop.m in Sources */ = {isa = PBXBuildFile; fileRef = F486EC9115FD1C4500C1E6A6 /* PickerPop.m */; };
@@ -27,6 +28,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		F452142315FF56C900E075D9 /* PopOverDateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopOverDateViewController.h; sourceTree = "<group>"; };
+		F452142415FF56C900E075D9 /* PopOverDateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopOverDateViewController.m; sourceTree = "<group>"; };
+		F452142515FF56C900E075D9 /* PopOverDateViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopOverDateViewController.xib; sourceTree = "<group>"; };
 		F486EC8715FD1C4500C1E6A6 /* libPickerPop.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPickerPop.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		F486EC8A15FD1C4500C1E6A6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F486EC8E15FD1C4500C1E6A6 /* PickerPop-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PickerPop-Prefix.pch"; sourceTree = "<group>"; };
@@ -78,6 +82,9 @@
 			children = (
 				F486EC8F15FD1C4500C1E6A6 /* PickerPop.h */,
 				F486EC9115FD1C4500C1E6A6 /* PickerPop.m */,
+				F452142315FF56C900E075D9 /* PopOverDateViewController.h */,
+				F452142415FF56C900E075D9 /* PopOverDateViewController.m */,
+				F452142515FF56C900E075D9 /* PopOverDateViewController.xib */,
 				F486EC8D15FD1C4500C1E6A6 /* Supporting Files */,
 				F486ECD315FD24F200C1E6A6 /* PopTableViewController.h */,
 				F486ECD415FD24F200C1E6A6 /* PopTableViewController.m */,
@@ -146,6 +153,7 @@
 			files = (
 				F486EC9215FD1C4500C1E6A6 /* PickerPop.m in Sources */,
 				F486ECD515FD24F200C1E6A6 /* PopTableViewController.m in Sources */,
+				F452142615FF56C900E075D9 /* PopOverDateViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
