@@ -99,6 +99,7 @@
         [self.menu setActionSheetStyle:UIActionSheetStyleBlackTranslucent];
         
         self.datePicker = [[UIDatePicker alloc] initWithFrame:CGRectMake(0,40,0,0)];
+        self.datePicker.timeZone = [NSTimeZone localTimeZone];
         [self.menu addSubview:self.datePicker];
         
         UISegmentedControl *closeButton = [[UISegmentedControl alloc] initWithItems:[NSArray arrayWithObject:@"Done"]];

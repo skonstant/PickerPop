@@ -25,7 +25,7 @@
         self.action = predicate;
         CGSize size = CGSizeMake(320, 260);
         self.contentSizeForViewInPopover = size;
-
+        self.datePicker.timeZone = [NSTimeZone localTimeZone];
     }
     return self;
 }
