@@ -60,13 +60,23 @@
         
         UISegmentedControl *closeButton = [[UISegmentedControl alloc] initWithItems:[NSArray arrayWithObject:@"Done"]];
         closeButton.momentary = YES;
-        closeButton.frame = CGRectMake(260, 7.0f, 50.0f, 30.0f);
+        if([UIDevice currentDevice].orientation == UIInterfaceOrientationLandscapeLeft ||
+           [UIDevice currentDevice].orientation == UIInterfaceOrientationLandscapeRight){
+            closeButton.frame = CGRectMake(420, 7.0f, 50.0f, 30.0f);
+        } else {
+            closeButton.frame = CGRectMake(260, 7.0f, 50.0f, 30.0f);
+        }
         closeButton.segmentedControlStyle = UISegmentedControlStyleBar;
         closeButton.tintColor = [UIColor blackColor];
         [closeButton addTarget:self action:@selector(dismissActionSheet) forControlEvents:UIControlEventValueChanged];
         [self.menu addSubview:closeButton];
-        [self.menu showInView:[[UIApplication sharedApplication] keyWindow]];
-        [self.menu setBounds:CGRectMake(0, 0, 320, 485)];
+        [self.menu showInView:[[[[UIApplication sharedApplication] keyWindow] subviews] objectAtIndex:0]];
+        if([UIDevice currentDevice].orientation == UIInterfaceOrientationLandscapeLeft ||
+           [UIDevice currentDevice].orientation == UIInterfaceOrientationLandscapeRight){
+            [self.menu setBounds:CGRectMake(0, 0, 480, 485)];
+        } else {
+            [self.menu setBounds:CGRectMake(0, 0, 320, 485)];
+        }
     }
     return self;
 }
@@ -104,13 +114,24 @@
         
         UISegmentedControl *closeButton = [[UISegmentedControl alloc] initWithItems:[NSArray arrayWithObject:@"Done"]];
         closeButton.momentary = YES;
-        closeButton.frame = CGRectMake(260, 7.0f, 50.0f, 30.0f);
+        if([UIDevice currentDevice].orientation == UIInterfaceOrientationLandscapeLeft ||
+           [UIDevice currentDevice].orientation == UIInterfaceOrientationLandscapeRight){
+            closeButton.frame = CGRectMake(420, 7.0f, 50.0f, 30.0f);
+        } else {
+            closeButton.frame = CGRectMake(260, 7.0f, 50.0f, 30.0f);
+        }
         closeButton.segmentedControlStyle = UISegmentedControlStyleBar;
         closeButton.tintColor = [UIColor blackColor];
         [closeButton addTarget:self action:@selector(dismissActionSheetDate) forControlEvents:UIControlEventValueChanged];
         [self.menu addSubview:closeButton];
-        [self.menu showInView:[[UIApplication sharedApplication] keyWindow]];
-        [self.menu setBounds:CGRectMake(0, 0, 320, 485)];
+        
+        [self.menu showInView:[[[[UIApplication sharedApplication] keyWindow] subviews] objectAtIndex:0]];
+        if([UIDevice currentDevice].orientation == UIInterfaceOrientationLandscapeLeft ||
+           [UIDevice currentDevice].orientation == UIInterfaceOrientationLandscapeRight){
+            [self.menu setBounds:CGRectMake(0, 0, 480, 485)];
+        } else {
+            [self.menu setBounds:CGRectMake(0, 0, 320, 485)];
+        }
     }
     return self;
 }
