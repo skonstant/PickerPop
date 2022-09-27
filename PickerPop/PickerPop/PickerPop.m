@@ -42,6 +42,8 @@
         
         [self.popover presentPopoverFromRect:[view frame] inView:[view superview]
                      permittedArrowDirections:UIPopoverArrowDirectionAny animated:YES];
+
+        NSLog(@"log some stuff");
     } else {
         self.menu = [[UIActionSheet alloc] initWithTitle:nil
                                                                  delegate:nil
